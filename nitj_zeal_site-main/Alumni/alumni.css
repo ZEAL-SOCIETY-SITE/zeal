@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #032E51;
+  background-color: #032e51;
 }
 
 h3 {
@@ -97,74 +97,11 @@ h3 {
   border-radius: 15px;
 }
 
-/* .reply {
-  background-image: linear-gradient(#02134e, black);
-  background-size: cover;
-  padding: 20px;
-} */
-
 h2 {
   text-align: center;
   color: rgb(255, 247, 174);
   text-decoration: underline;
 }
-
-/* form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-label {
-  color: white;
-  display: block;
-  margin-top: 10px;
-}
-
-#name,
-#email,
-#message {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  text-decoration: none;
-  color: gold;
-  font-size: 20px;
-  padding: 5px;
-  border: 3px ridge gold;
-  border-radius: 20px;
-}
-
-#name:hover,
-#email:hover,
-#message:hover {
-  color: rgb(4, 255, 0);
-  border-color: rgb(4, 255, 0);
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 5px;
-}
-
-button[type="submit"] {
-  display: block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-#follow {
-  padding-right: 10px;
-} */
 
 @media (max-width: 720px) {
   .image,
@@ -177,6 +114,9 @@ button[type="submit"]:hover {
 
   .alumni_info {
     font-size: 20px;
+  }
+  .linkedin_link img {
+    margin-left: 110px;
   }
 }
 @media (max-width: 400px) {

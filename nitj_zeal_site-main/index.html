@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="top.css" />
   <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   <title>Zeal Society (NITJ)</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="../assets/logo.png" alt="logo" />
+      <img src="assets/logo.png" alt="logo" />
     </div>
     <div class="hamburger">
       <div class="content"></div>
@@ -25,7 +26,7 @@
     <nav class="nav-bar">
       <ul>
         <li>
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html"  id="active">Home</a>
         </li>
         <li>
           <a href="">Events</a>
@@ -42,6 +43,7 @@
       </ul>
     </nav>
   </header>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <canvas id="c">
     <div>ZEAL SOCIETY</div>
   </canvas>
@@ -151,34 +153,23 @@
     </div>
   </div>
 
-
   <div class="reply-container" id="contact">
     <div class="reply-title">
       <h1>Leave a reply</h1>
     </div>
+    <form action="https://formsubmit.co/zeal@nitj.ac.in" method="POST"></form>
     <div class="form">
-      <input type="text" placeholder="Name" class="input-name">
-      <input type="email" placeholder="E-mail" class="input-email">
-      <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="input-message"></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5501/alumni.html">
+      <input type="text" placeholder="Name" name="name" class="input-name" autocomplete="off">
+      <input type="email" placeholder="E-mail" name="email" class="input-email" autocomplete="off">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Message" name="message" class="input-message"
+        autocomplete="off"></textarea>
     </div>
+    </form>
 
-    <div class="reply-container" id="contact">
-      <div class="reply-title">
-          <h1>Leave a reply</h1>
-      </div>
-      <form action="https://formsubmit.co/zeal@nitj.ac.in" method="POST"></form>
-      <div class="form">
-
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="http://127.0.0.1:5501/alumni.html">
-          <input type="text" placeholder="Name" name="name" class="input-name" autocomplete="off">
-          <input type="email" placeholder="E-mail" name="email" class="input-email"autocomplete="off">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message" name="message"
-              class="input-message" autocomplete="off"></textarea>
-      </div>
-      </form>
-
-      <button class="btn">SUBMIT</button>
+    <button class="btn">SUBMIT</button>
 
   </div>
   <footer>
@@ -186,18 +177,27 @@
       <div class="col">
         <div class="title">Social</div>
         <div class="icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100086880999607" target="_blank"
+                class="fa fa-facebook"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/zealnitj/" target="_blank" class="fa fa-instagram"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/zeal-society-nitj/" target="_blank" class="fa fa-linkedin"></a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="col">
         <div class="title">Contact Details: </div>
         <div class="text">
           <ul>
-            <li>Email: </li>
-            <li>Phone No: </li>
-            <li>Address: </li>
+            <li>Email: <a href="mailto:zeal@nitj.ac.in" target="_blank">zeal@nitj.ac.in</a> </li>
+            <li>Address: <a href="https://goo.gl/maps/DFxVHCEnUwveCvSA7" target="_blank">G.T Road, Amritsar Bypass,
+                Jalandhar, Punjab, India-144008</a></li>
           </ul>
         </div>
       </div>
@@ -205,10 +205,10 @@
         <div class="title">Pages</div>
         <div class="text">
           <ul>
-            <li>About</li>
-            <li>Events</li>
-            <li>Gallery</li>
-            <li>Alumini</li>
+            <li> <a href="#" target="_blank">About</a></li>
+            <li> <a href="#" target="_blank">Events</a></li>
+            <li> <a href="#" target="_blank">Gallery</a></li>
+            <li> <a href="Alumni/alumni.html" target="_blank">Alumini</a></li>
           </ul>
         </div>
       </div>
@@ -231,5 +231,6 @@
   </footer>
 </body>
 <script src="script.js"></script>
+<script src="top.js"></script>
 
 </html>
